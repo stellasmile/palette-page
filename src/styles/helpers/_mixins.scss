@@ -1,0 +1,35 @@
+@mixin fonts($font-size,$font-family,$font-weight,$font-color) {
+    font-size: $font-size;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    color: $font-color;
+}
+
+@mixin select($width, $height, $padding, $border, $bgc) {
+    width: $width;
+    height: $height;
+    padding: $padding;
+    border: $border;
+    background-color: $bgc;   
+    border-radius: 4px;
+}
+
+@mixin button($width, $height, $border, $bgc, $clr) {
+    width: $width;
+    height: $height;
+    border: $border;
+    background-color: $bgc;   
+    color: $clr;
+    border-radius: 4px;
+    font-weight: 900;
+    transition: .4s;
+}
+
+@mixin disbl() {
+    background-color: #000;
+    color: white;
+    border: 2px gray;
+    border-radius: 4px;
+    opacity: .2;
+    }
+
